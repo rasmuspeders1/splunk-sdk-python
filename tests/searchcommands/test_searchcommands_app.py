@@ -43,6 +43,7 @@ import json
 import csv
 import io
 import os
+import sys
 
 try:
     from tests.searchcommands import project_root
@@ -157,6 +158,7 @@ class TestSearchCommandsApp(TestCase):
 
     def test_countmatches_as_unit(self):
 
+        print(sys.path)
         expected, output, errors, exit_status = self._run_command('countmatches', action='getinfo', protocol=1)
         self.assertEqual(0, exit_status, msg=six.text_type(errors))
         self.assertEqual('', errors)
