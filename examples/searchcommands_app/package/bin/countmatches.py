@@ -19,6 +19,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import app
 import os,sys
 
+print(help('modules'))
 from splunklib import six
 from splunklib.searchcommands import dispatch, StreamingCommand, Configuration, Option, validators
 
