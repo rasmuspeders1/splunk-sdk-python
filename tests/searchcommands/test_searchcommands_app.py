@@ -51,6 +51,7 @@ except ImportError:
     # Python 2.6
     pass
 
+sys.path.append(os.path.join(project_root))
 
 def pypy():
     try:
