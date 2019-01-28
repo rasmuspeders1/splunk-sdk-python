@@ -20,8 +20,6 @@ import app
 import os,sys
 import time
 
-splunkhome = os.environ['SPLUNK_HOME']
-sys.path.append(os.path.join(splunkhome, 'etc', 'apps', 'searchcommands_app', 'lib'))
 from splunklib.searchcommands import dispatch, GeneratingCommand, Configuration, Option, validators
 from splunklib import six
 from splunklib.six.moves import range
